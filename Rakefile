@@ -1,3 +1,3 @@
 task :console do
-  exec "irb -r fana_os -I ./lib"
+  exec "RACK_ENV=development irb -r fana_os -I ./lib"
 end

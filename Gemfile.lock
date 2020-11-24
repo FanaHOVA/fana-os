@@ -1,26 +1,62 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (6.0.3.4)
+      activesupport (= 6.0.3.4)
+    activesupport (6.0.3.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
+    bson (4.11.1)
+    concurrent-ruby (1.1.7)
     dotenv (2.7.6)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.14.0)
       faraday (>= 0.7.4, < 1.0)
     hashie (4.1.0)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    minitest (5.14.2)
+    mongo (2.13.1)
+      bson (>= 4.8.2, < 5.0.0)
+    mongoid (7.1.5)
+      activemodel (>= 5.1, < 6.1)
+      mongo (>= 2.7.0, < 3.0.0)
     multi_json (1.15.0)
     multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     pocket-ruby (0.0.6)
       faraday (>= 0.7)
       faraday_middleware (~> 0.9)
       hashie (>= 0.4.0)
       multi_json (~> 1.0, >= 1.0.3)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    ruby2_keywords (0.0.2)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    thread_safe (0.3.6)
+    tilt (2.0.10)
+    tzinfo (1.2.8)
+      thread_safe (~> 0.1)
+    zeitwerk (2.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   dotenv
+  mongoid (~> 7.0)
   pocket-ruby
+  sinatra
 
 BUNDLED WITH
    1.17.3

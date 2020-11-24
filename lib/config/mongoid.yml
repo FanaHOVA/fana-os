@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      uri: mongodb://127.0.0.1:27017/
+      options:
+        server_selection_timeout: 1
