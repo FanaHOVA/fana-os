@@ -22,6 +22,7 @@ Tags:
 - Events that span bigger blocks of contiguous time (“Rocks”), micro events that take advantage of attention gaps between or during those blocks (“Sand”), and things that can overlay over the other two (“Water”).
 ```
 
+To get the access token you can use the Sinatra server built in (Start it with `ruby oauth_server.rb`). In order to get highlights, you should use the consumer key obtained from the Pocket web app. To get that, use the Chrome dev tools and observe the XHR requests; they will include the `consumer_key` as a parameter. Then plug that into your `.env` file. 
 
 ## In the pipeline
 
