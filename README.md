@@ -3,7 +3,9 @@ This is my operating system. High level:
 
 - Knowledge management: Obsidian
 - Reading: Pocket
-- 
+- Email: Superhuman
+- Code editor: VSC
+- Daily work: Custom built software (645 Voyager)
 
 ### Pocket
 
@@ -24,12 +26,12 @@ Tags:
 
 To get the access token you can use the Sinatra server built in (Start it with `ruby oauth_server.rb`). In order to get highlights, you should use the consumer key obtained from the Pocket web app. To get that, use the Chrome dev tools and observe the XHR requests; they will include the `consumer_key` as a parameter. Then plug that into your `.env` file. 
 
+### Obsidian
+
+- My main Obsidian folder is a git repo. I have a script to add all to it, timestamp the commit and send to GitHub for storage.
+
 ## In the pipeline
 
 ### Remote db support
 
 Right now I use a local Mongo to store data. Should move this to an hosted instance.
-
-### Obsidian
-
-I version control all of my Obsidian. I do this manually, but it should be automated with a script + scheduled. 
