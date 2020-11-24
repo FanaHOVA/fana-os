@@ -45,7 +45,7 @@ module FanaOs
       if attributes['status'].to_i == 1
         time_read = Time.at(attributes['time_read'].to_i)
         
-        notes_path = "/Users/fana/obsidian/research/Daily/#{time_read.strftime('%Y-%m-%d')}.md"
+        notes_path = "#{OBSIDIAN_ROOTH}/research/Daily/#{time_read.strftime('%Y-%m-%d')}.md"
 
         annotations = []
 
@@ -80,7 +80,8 @@ module FanaOs
         article.update(
           read_at: time_read,
           word_count: attributes['word_count'],
-          annotations_added_at: Date.current
+          annotations_added_at: Date.current,
+          tags: attributes['tags'].to_h.keys
         )
       end
     end
@@ -96,6 +97,7 @@ module FanaOs
     field :read_at, type: Date
     field :word_count, type: Integer
     field :annotations_added_at, type: Date
+    field :tags, type: Array, default: []
 
     has_many :pocket_annotations
   end

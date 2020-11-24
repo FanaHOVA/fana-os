@@ -7,3 +7,4 @@ gem 'mongoid', '~> 7.0'
 
 # APIs
 gem 'pocket-ruby'
+gem 'git'
