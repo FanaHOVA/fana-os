@@ -45,7 +45,7 @@ module FanaOs
       if attributes['status'].to_i == 1
         time_read = Time.at(attributes['time_read'].to_i)
         
-        notes_path = "#{OBSIDIAN_ROOTH}/research/Daily/#{time_read.strftime('%Y-%m-%d')}.md"
+        notes_path = "#{ENV.fetch('OBSIDIAN_ROOT')}/research/Daily/#{time_read.strftime('%Y-%m-%d')}.md"
 
         annotations = []
 
