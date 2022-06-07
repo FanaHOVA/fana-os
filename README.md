@@ -2,7 +2,8 @@
 This is my operating system. High level:
 
 - Knowledge management: Obsidian
-- Reading: Pocket
+- Reading (web): Pocket
+- Reading (pdfs): [Obsidian Annotator](https://github.com/elias-sundqvist/obsidian-annotator)
 - Email: Superhuman
 - Code editor: VSC
 - Daily work: Custom built software (645 Voyager)
