@@ -6,7 +6,7 @@ This is my operating system. High level:
 - Reading (pdfs): [Obsidian Annotator](https://github.com/elias-sundqvist/obsidian-annotator)
 - Email: Superhuman
 - Code editor: VSC
-- Daily work: Custom built software (645 Voyager)
+- Daily work: Custom built software @ Decibel
 
 ### Pocket
 
